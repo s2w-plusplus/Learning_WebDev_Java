@@ -1,0 +1,14 @@
+Day 7
+1. Import day7.2 & revise JSP syntax
+(using "day7-data\day7_help\jsp_help\readme_jsp.txt")
+
+2. Refer to JSP declaration tag from above readme.
+Complete the assignment with the help of lab faculty 
+(day7-data\JSP assignment .png)
+
+3. Complete DAO layer of (day7-data\candidate-registration.png) 
+Will be solving this assginment tomorrow , using JSP & JavaBean
+
+4. Complete pending work.
+
+5. import day7.1 , to understand ServletContext, cotext-params & context listener.

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>day06_optional</display-name>
+  <welcome-file-list>
+    <welcome-file>login.html</welcome-file>
+  </welcome-file-list>
+  
+  <!--  Self-Written tags start  -->
+  <!-- Servlet deployment tags -->
+  <servlet>
+  		<servlet-name>Loginpage</servlet-name>
+  		<servlet-class>myWpages.LoginServlet</servlet-class>  		
+  	<!-- You can use Servlet Specific Config parameters-->
+  		<init-param>
+			<param-name>drvr</param-name>
+			<param-value>com.mysql.cj.jdbc.Driver</param-value>
+		</init-param>
+		<init-param>
+			<param-name>db_url</param-name>
+			<param-value>jdbc:mysql://localhost:3306/wbjava_schema?useSSL=false&amp;allowPublicKeyRetrieval=true</param-value>
+		</init-param>
+		<init-param>
+			<param-name>user_name</param-name>
+			<param-value>root</param-value>
+		</init-param>
+		<init-param>
+			<param-name>pwd</param-name>
+			<param-value>MySQL@42500191</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>Loginpage</servlet-name>
+  		<url-pattern>/authenticate</url-pattern>
+  </servlet-mapping>
+  
+ <?ignore
+ <!-- You can also use Context-Parameters -->
+		<context-param>
+			<param-name>driver</param-name>
+  			<param-value>com.mysql.cj.jdbc.Driver</param-value>
+		</context-param>
+		<context-param>
+			<param-name>DB_url</param-name>
+  			<param-value>jdbc:mysql://localhost:3306/wbjava_schema?useSSL=false&amp;allowPublicKeyRetrieval=true</param-value>
+		</context-param>
+		<context-param>
+			<param-name>Username</param-name>
+			<param-value>root</param-value>
+		</context-param>
+		<context-param>
+			<param-name>Password</param-name>
+			<param-value>MySQL@42500191</param-value>
+		</context-param>
+  <!--  or simply use listeners-->
+?>
+
+</web-app>

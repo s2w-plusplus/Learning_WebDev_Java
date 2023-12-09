@@ -1,0 +1,12 @@
+127.0.0.1 - - [29/Jul/2021:10:11:29 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [29/Jul/2021:10:11:35 +0530] "GET /web_hibernate_maven_template_self/ HTTP/1.1" 200 206
+0:0:0:0:0:0:0:1 - - [29/Jul/2021:10:11:36 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [29/Jul/2021:10:11:39 +0530] "GET /web_hibernate_maven_template_self/ HTTP/1.1" 200 206
+0:0:0:0:0:0:0:1 - - [29/Jul/2021:10:11:41 +0530] "GET /web_hibernate_maven_template_self/ HTTP/1.1" 200 203
+0:0:0:0:0:0:0:1 - - [29/Jul/2021:10:11:42 +0530] "GET /web_hibernate_maven_template_self/ HTTP/1.1" 200 203
+0:0:0:0:0:0:0:1 - - [29/Jul/2021:10:11:42 +0530] "GET /web_hibernate_maven_template_self/ HTTP/1.1" 200 206
+0:0:0:0:0:0:0:1 - - [29/Jul/2021:10:11:43 +0530] "GET /web_hibernate_maven_template_self/ HTTP/1.1" 200 206
+0:0:0:0:0:0:0:1 - - [29/Jul/2021:10:11:43 +0530] "GET /web_hibernate_maven_template_self/ HTTP/1.1" 200 206
+0:0:0:0:0:0:0:1 - - [29/Jul/2021:10:11:44 +0530] "GET /web_hibernate_maven_template_self/ HTTP/1.1" 200 206
+0:0:0:0:0:0:0:1 - - [29/Jul/2021:10:11:44 +0530] "GET /web_hibernate_maven_template_self/ HTTP/1.1" 200 206
+0:0:0:0:0:0:0:1 - - [29/Jul/2021:10:11:46 +0530] "GET /web_hibernate_maven_template_self/ HTTP/1.1" 200 206

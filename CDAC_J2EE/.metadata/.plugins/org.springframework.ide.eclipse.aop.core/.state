@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="spring_boot_mvc_vms2"/>
+<aop-project name="day17_user_backend"/>
+<aop-project name="NetBankingRESTServer"/>
+<aop-project name="day15_spring_boot"/>
+<aop-project name="spring-boot-thymeleaf"/>
+<aop-project name="spring-boot-aop"/>
+</aop-reference-model>

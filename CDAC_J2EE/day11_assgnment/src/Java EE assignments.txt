@@ -1,0 +1,29 @@
+Day 11
+In combined lab : 
+0. casacading (on delete)
+1. Identify n Solve lazy init issues .
+PENDING
+2. Create one to one bi directional association , with shared primary key , between Student & Address.
+3. Replace it by uni dir , for reducing no of queries.
+
+
+3. Revise class work
+1.1 import day11.1 , to revise Blob handling
+1.2 import day11.2 , to revise one to many & one to one bi directional association between entities.
+
+4.Hands on (Mandatory)
+4.1 Create Vendor 1<---->* BankAccount , bi directional one to many association
+BankAccount details
+id(inherited from BaseEntity) , type(enum:SAVING,CURRENT,FD,DMAT,LOAN), balance , transactionDate (Date) --use @Temporal annotation (refer to JPA docs)
+
+4.2 Create Vendor 1<----Location , uni dir one to one association.
+Optional
+4.3 Create Topic 1 <-----* Tutorial , uni directional  many to one association
+
+
+
+
+
+
+
+

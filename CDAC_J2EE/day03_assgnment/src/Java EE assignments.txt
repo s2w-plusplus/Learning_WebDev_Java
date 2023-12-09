@@ -1,0 +1,53 @@
+Day 3
+With lab facutly's  help : 
+1. Understand how to  import existing dynamic web project n fix errors if any 
+
+2.Identify all possible clean up instructions , in case of errors
+
+Do the revsion , along with hands-on today.
+Create a new dynamic web project (check web.xml checkbox) : eg day3_lab1
+Solve following
+3. Create a welcome page : index.html
+Add a link : to invoke the servlet (which will be deployed using @WebServlet annoatation)
+
+Create FirstServlet.java , override life cycle methods & trace the life cycle.
+Use @WebServlet annoatation . WC should load this servlet lazily.
+
+4. Add another link in index.html : to invoke the servlet (which will be deployed using xml tags)
+
+Create SecondServlet.java , override life cycle methods & trace the life cycle.
+Do NOT Use @WebServlet annoatation , instead add xml tags in web.xml
+ . WC should load this servlet eagerly
+
+5. Add / in anchor tag's href. Observe n conclude
+
+6. Remove / from the url-pattern . Observe n conclude
+
+7. Give same url-pattern to both of these servlets . Observe n conclude
+
+8. Copy input.html from "day2-data\day2_help\HTML pages" , under webapp
+Write a servlet to send followoing response to the clnt
+Hello , user name
+Favorite Colors : ...
+Chosen Browser : ..
+Selected City : 
+About Yourself : 
+
+API Help (refer to Java EE docs fro further clarity)
+
+How to read request params sent from the clnt ?
+
+javax.servlet.ServletRequest i/f methods
+1. public String getParameter(String paramName)
+
+2. public String[] getParameterValues(String paramName)
+ 
+
+
+
+
+
+
+
+
+

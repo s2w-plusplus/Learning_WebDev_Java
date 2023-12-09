@@ -1,0 +1,80 @@
+Day 2
+
+0.First  ensure that , you have added Tomcat web server in your J2EE workspace & you have created n tested 1st dyn web project m having index.html content
+(refer to day2-data\day2_help\common help\steps in tomcat.txt)
+
+Revise class work.(by importing day2.1)
+
+1. JDBC assignment (MUST be done using layered approach)
+(refer to diag : day2-data\day2_help\case studies\voting assignment.png)
+
+Layers
+1.1 Table : voters & candidates (copy them from day2-data\day2_help\sql\my_sql_cmds_voting.txt)
+1.2 POJOs : Voter & Candidate
+(POJO : state , def constr, parameterized constr, setters/getters,toString)
+1.3 DAO : IVoterDao , ICandidateDao & implementation classes.
+IVoterDao
+Voter authenticateVoter(String em,String pwd) throws SE
+String updateVotingStatus(int voterId) throws SE
+
+VoterDaoImpl
+state : cn ,pst1
+def constr : get cn from utils , create pst1
+CRUD methods : 
+public Voter authenticateVoter(String em,String pwd) throws SE
+{
+  1. set IN params : 2
+  2. execQuery --RST --if(....) return new Voter(...);
+   return null;
+}
+clean up
+
+1.4 ICandidateDao
+String registerCandidate(String name,String party) throws SqlExc
+String updateVotes(int candidateId) throws SqlExc
+
+CandidateDaoImpl
+state : cn , pst1
+def constr : get cn , pst1 : "insert into candidates values(default,?,?,0)"
+
+CRUD methods : 
+public String registerCandidate(String name,String party) throws SqlExc
+{
+  //set IN params , execUpdate ---> updateCount --1 --chk n ret sts mesg.
+}
+
+
+cleanup : close pst1
+
+
+
+
+
+1.4 Tester
+try(sc) 
+{exit=false;
+  instantiate VoterDao, CandidateDao 
+  while --try --switch case 
+}catch-all
+
+Options
+1. Voter login
+i/p : email & password
+o/p status mesg
+Voter login successful, Your details ....
+
+2. Candidate registration
+i/p candidate details excluding id & votes (Accept name & party from user. id will be generated in auto-increment manner  & initialize votes=0)
+o/p : status message
+
+3. List all candidates
+
+4. Cast a Vote
+i/p : candidate id & voter id
+Action : inc candidate's votes & change voting status to true.
+o/p status mesg
+(Hint : invoke  2 separate methods  on 2 different daos : Voter Dao n Candidate Dao)
+
+Mandatory reading 
+1. HTTP basics
+2. web basics

@@ -1,0 +1,23 @@
+Day 12
+In a combined lab : 
+1. Create maven based spring application (Java SE based) , to demo setter based D.I & spring beans life cycle.
+(copy it from the template)
+
+2. Refer to "web-app-hibernate-integration-assgnment" , from day12-data
+Start with the design part .
+
+3. Replace setter based D.I by constructor based D.I (if time permits , in the combined lab)
+
+4. Complete the implementation of "web-app-hibernate-integration-assgnment"  in the individual labs. Revise complete class work.
+
+Optional work
+5. Refer to Vendors-ER-Diag , from day12-data.
+Complete POJO's design from the supplied diagram.
+
+
+
+
+
+
+
+

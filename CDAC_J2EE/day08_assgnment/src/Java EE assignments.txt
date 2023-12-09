@@ -1,0 +1,18 @@
+
+Day 7 (Partial)
+
+Complete DAO layer of (day7-data\candidate-registration.png) 
+Will be solving this assginment tomorrow , using JSP & JavaBean
+
+
+Day 8
+1. import day8.2 & revise completely JSP--JavaBean--DAO--POJO--DB flow.
+(use readme_jsp for better clarity & refer to  JSP --JB diagrams)
+
+2. Identify "double submit issue" with server pull & replace it by client pull
+(JSTL tags)
+
+3. Solve assignment of registering new candidate under "admin" role (with lab faculty's help)
+(refer : candidate-registration.png)
+
+4. Refer to  "day8_data\maven\maven instructions for Java SE with Hibernate.txt" OR import "day8_data\maven\test_hibernate_maven" , as existing maven project.
